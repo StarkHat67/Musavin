@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.poem p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.floating-heart {
+  position: absolute;
+  top: 100vh;
+  font-size: 24px;
+  color: #ff3366;
+  animation: floatUp linear forwards;
+  opacity: 0.7;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
